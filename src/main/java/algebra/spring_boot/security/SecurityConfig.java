@@ -1,10 +1,6 @@
 package algebra.spring_boot.security;
 
-import algebra.spring_boot.article.ArticleService;
-import algebra.spring_boot.article.ArticleServiceImpl;
-import algebra.spring_boot.user.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

@@ -1,14 +1,9 @@
 package algebra.spring_boot.polaznik;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-//ok
 
 @Data
 @AllArgsConstructor
@@ -25,8 +20,15 @@ public class Polaznik {
     private String prezime;
 
 
+    private Polaznik polaznik;
+
     public Polaznik(Integer id, String ime, String prezime) {
         this.id = id;
+        this.ime = ime;
+        this.prezime = prezime;
+    }
+
+    public Polaznik(String ime, String prezime){
         this.ime = ime;
         this.prezime = prezime;
     }

@@ -14,5 +14,6 @@ public class UpdateProgramObrazovanjaDto {
     @NotBlank
     private String naziv;
 
+    @NotBlank
     private Integer csvet;
 }

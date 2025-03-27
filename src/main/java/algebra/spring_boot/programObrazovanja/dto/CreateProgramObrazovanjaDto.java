@@ -14,6 +14,7 @@ public class CreateProgramObrazovanjaDto {
     @NotBlank
     private String naziv;
 
+    @NotBlank
     private Integer csvet;
 
 }

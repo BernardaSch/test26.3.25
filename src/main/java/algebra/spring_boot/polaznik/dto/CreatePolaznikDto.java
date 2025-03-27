@@ -1,7 +1,6 @@
 package algebra.spring_boot.polaznik.dto;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -12,6 +11,7 @@ public class CreatePolaznikDto {
     @NotBlank
     private String ime;
 
+    @NotBlank
     private String prezime;
 
 }

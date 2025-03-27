@@ -1,5 +1,6 @@
 package algebra.spring_boot.programObrazovanja;
 
+import algebra.spring_boot.polaznik.Polaznik;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -23,10 +24,17 @@ public class ProgramObrazovanja {
 
     private Integer csvet;
 
+    private ProgramObrazovanja programObrazovanja;
 
     public ProgramObrazovanja(Integer id, String naziv, Integer csvet) {
         this.id = id;
         this.naziv = naziv;
         this.csvet = csvet;
     }
+
+    public ProgramObrazovanja(String naziv, Integer csvet){
+        this.naziv = naziv;
+        this.csvet = csvet;
+    }
+
 }
